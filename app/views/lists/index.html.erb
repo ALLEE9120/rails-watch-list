@@ -1,0 +1,8 @@
+<ul class="d-flex justify-content-around">
+  <% @lists.each do |link|  %>
+    <li ><%= link_to link.name, list_path(link) %></li>
+  <% end %>
+</ul>
+
+<a class="btn btn success bg-primary rounded-pill text-white" href="lists/new">New Link</a>
+<a class="btn btn success bg-primary rounded-pill text-white" href="lists/bookmarks/new">New Bookmark</a>
