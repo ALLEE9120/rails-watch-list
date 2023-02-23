@@ -10,3 +10,20 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+body{
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+  color: #f6f4e6;
+}
+
+a{
+  text-decoration: none;
+  color: #f6f4e6;
+}
+
+.btn{
+  text-decoration: none;
+  color: #f6f4e6;
+}

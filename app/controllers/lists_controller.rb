@@ -4,6 +4,7 @@ class ListsController < ApplicationController
   end
 
   def show
+    @bookmark = Bookmark.new
     @list = List.find(params[:id])
   end
 
@@ -17,10 +18,10 @@ class ListsController < ApplicationController
     redirect_to list_path(@list)
   end
 
-  def bookmarks
+  def destroy
     @list = List.find(params[:id])
-    @bookmarks = @list.bookmarks
-    render 'bookmarks/list', locals: {bookmarks: @bookmarks }
+    @list.destroy
+    redirect_to lists_path, status: :see_other
   end
 
   private

@@ -1,1 +1,33 @@
 // Specific CSS for your home-page
+body{
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #f6f4e6;
+  padding: 30px;
+}
+
+.btn{
+  text-decoration: none;
+  color: #f6f4e6;
+}
+
+.btn:hover, a:hover{
+  color: #f0d02e;
+}
+
+.navMenu {
+  width: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
